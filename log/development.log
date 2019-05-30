@@ -408,3 +408,42 @@ Processing by RecipesController#index as */*
 Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.2ms)
 
 
+Started POST "/auth/login?email=paulozuniga17@gmail.com&password=[FILTERED]" for ::1 at 2019-05-29 14:35:37 -0600
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paulo/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by AuthenticationController#login as */*
+  Parameters: {"email"=>"paulozuniga17@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "paulozuniga17@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6
+Completed 200 OK in 108ms (Views: 0.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/recipes" for ::1 at 2019-05-29 14:35:50 -0600
+Processing by RecipesController#show as */*
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipes" for ::1 at 2019-05-29 14:36:42 -0600
+Processing by RecipesController#index as */*
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 4ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/auth/login?email=paulozuniga17@gmail.com&password=[FILTERED]" for ::1 at 2019-05-29 14:37:01 -0600
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paulo/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by AuthenticationController#login as */*
+  Parameters: {"email"=>"paulozuniga17@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "paulozuniga17@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6
+Completed 200 OK in 191ms (Views: 0.2ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/recipes" for ::1 at 2019-05-29 14:37:12 -0600
+Processing by RecipesController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+

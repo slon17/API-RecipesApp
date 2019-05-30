@@ -123,6 +123,8 @@ GEM
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
     sqlite3 (1.4.1)
+    swipl (0.5.0)
+      ffi (~> 1.9)
     thor (0.20.3)
     thread_safe (0.3.6)
     tzinfo (1.2.5)
@@ -145,6 +147,7 @@ DEPENDENCIES
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3
+  swipl (~> 0.5.0)
   tzinfo-data
 
 RUBY VERSION

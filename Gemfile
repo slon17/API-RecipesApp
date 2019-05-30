@@ -11,6 +11,9 @@ gem 'jwt'
 #Active model secure password
 gem 'bcrypt', '~> 3.1.7'
 
+#Prolog gem
+gem 'swipl', '~> 0.5.0'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
 # Use sqlite3 as the database for Active Record

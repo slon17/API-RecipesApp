@@ -8,9 +8,9 @@ receta('macarrones','almuerzo',['espaguetti','salsa de tomate','queso'],'cocine 
 receta('arepas','desayuno',['leche','polvito de arepa','azucar','huevo'],'haga una masa con el polvo, la leche y el huevo, agrega azucar al gusto y frie arepitas en el sarten','arepa.png').
 
 
-buscarXnombre(Busqueda, N,T,Ing,P,Img) :- receta(Busqueda, T,Ing,P, Img).
-buscarXtipo(Busqueda, N,T,Ing,P,Img)  :- receta(N, Busqueda, Ing,P, Img).
+buscarXnombre(Busqueda, _,T,Ing,P,Img) :- receta(Busqueda, T,Ing,P, Img).
+buscarXtipo(Busqueda, N,_,Ing,P,Img)  :- receta(N, Busqueda, Ing,P, Img).
 
 buscarXingrediente(Busqueda, N,T,Ing,P,Img) :- receta(N,T,Ing,P,Img), ingrediente(Busqueda,Ing).
-ingrediente(Busqueda, [Busqueda|R]).
-ingrediente(Busqueda,[B|R]) :- bingrediente(Busqueda, R).
+ingrediente(Busqueda, [Busqueda|_]).
+ingrediente(Busqueda,[_|R]) :- ingrediente(Busqueda, R).

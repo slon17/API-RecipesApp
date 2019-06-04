@@ -447,3 +447,1506 @@ Processing by RecipesController#index as */*
 Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.3ms)
 
 
+Started POST "/auth/login?email=paulozuniga17@gmail.com&password=[FILTERED]" for ::1 at 2019-06-03 09:19:08 -0600
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paulo/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by AuthenticationController#login as */*
+  Parameters: {"email"=>"paulozuniga17@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "paulozuniga17@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6
+Completed 200 OK in 97ms (Views: 0.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/recipes" for ::1 at 2019-06-03 09:19:42 -0600
+Processing by RecipesController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.2ms)
+
+
+  
+NameError (uninitialized constant RecipesController::Net):
+  
+app/controllers/recipes_controller.rb:16:in `index'
+Started GET "/recipes" for ::1 at 2019-06-03 09:20:26 -0600
+  
+LoadError (cannot load such file -- net/ssh):
+  
+app/controllers/recipes_controller.rb:3:in `<top (required)>'
+Started GET "/recipes" for ::1 at 2019-06-03 09:22:40 -0600
+Processing by RecipesController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.9ms)
+
+
+  
+NameError (uninitialized constant RecipesController::Net):
+  
+app/controllers/recipes_controller.rb:16:in `index'
+Started GET "/recipes" for ::1 at 2019-06-03 09:23:49 -0600
+Processing by RecipesController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.1ms)
+
+
+  
+NameError (uninitialized constant RecipesController::Net):
+  
+app/controllers/recipes_controller.rb:16:in `index'
+Started POST "/auth/login?email=paulozuniga17@gmail.com&password=[FILTERED]" for ::1 at 2019-06-03 09:26:39 -0600
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paulo/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by AuthenticationController#login as */*
+  Parameters: {"email"=>"paulozuniga17@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "paulozuniga17@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6
+Completed 200 OK in 166ms (Views: 0.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/recipes" for ::1 at 2019-06-03 09:26:51 -0600
+Processing by RecipesController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Completed 200 OK in 999ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/recipes" for ::1 at 2019-06-03 09:27:48 -0600
+Processing by RecipesController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Completed 200 OK in 1083ms (Views: 0.1ms | ActiveRecord: 4.9ms)
+
+
+Started POST "/auth/login?email=paulozuniga17@gmail.com&password=[FILTERED]" for ::1 at 2019-06-03 10:05:18 -0600
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paulo/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by AuthenticationController#login as */*
+  Parameters: {"email"=>"paulozuniga17@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "paulozuniga17@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6
+Completed 200 OK in 102ms (Views: 0.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/recipes" for ::1 at 2019-06-03 10:05:29 -0600
+Processing by RecipesController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Completed 500 Internal Server Error in 1066ms (ActiveRecord: 0.3ms)
+
+
+  
+JSON::ParserError (765: unexpected token at 'Warning: /home/paulozuniga/recetas.pl:10:
+	Singleton variables: [N]
+Warning: /home/paulozuniga/recetas.pl:11:
+	Singleton variables: [T]
+Warning: /home/paulozuniga/recetas.pl:14:
+	Singleton variables: [R]
+Warning: /home/paulozuniga/recetas.pl:15:
+	Singleton variables: [B]
+puerco
+sal
+pimienta
+arroz
+huevo
+frijoles
+huevo
+cereal
+leche
+espaguetti
+salsa de tomate
+queso
+leche
+polvito de arepa
+azucar
+huevo
+[["puerco asado", "cena", "[\"puerco\", \"sal\", \"pimienta\"]", "embarre el puerco de sal y pimienta y pongalo al fuego", "[\"chanchoalhorno.png\"]"], ["arroz con huevo", "almuerzo", "[\"arroz\", \"huevo\"]", "ponga a hacer el huevo como si fuese a ser pateado y agrega el arroz", "[\"arrozconuevo.png\"]"], ["sopa negra", "cena", "[\"frijoles\", \"huevo\"]", "haga frijoles y agregue el huevo sin pelar para que se ponga duro", "[\"sopanegra.png\"]"], ["cereal", "desayuno", "[\"cereal\", \"leche\"]", "ponga el cereal en un plato hondo y agregue la leche", "[\"cereal.png\"]"], ["macarrones", "almuerzo", "[\"espaguetti\", \"salsa de tomate\", \"queso\"]", "cocine los espaguetties, agregue la salsa y luego el queso", "[\"macarrones.png\"]"], ["arepas", "desayuno", "[\"leche\", \"polvito de arepa\", \"azucar\", \"huevo\"]", "haga una masa con el polvo, la leche y el huevo, agrega azucar al gusto y frie arepitas en el sarten", "[\"arepa.png\"]"]]
+'):
+  
+app/controllers/recipes_controller.rb:17:in `block in index'
+app/controllers/recipes_controller.rb:16:in `index'
+Started GET "/recipes" for ::1 at 2019-06-03 10:07:34 -0600
+  
+SyntaxError (/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting ')'
+...     @recipes = JSON("[["puerco asado", "cena", "[\"puerco\"...
+...                         ^~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...= JSON("[["puerco asado", "cena", "[\"puerco\", \"sal\", \"p...
+...                           ^~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected $undefined, expecting ']'
+...("[["puerco asado", "cena", "[\"puerco\", \"sal\", \"pimient...
+...                              ^
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected ',', expecting keyword_end
+...rco\", \"sal\", \"pimienta\"]", "embarre el puerco de sal y ...
+...                              ^
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected ',', expecting keyword_end
+...y pimienta y pongalo al fuego", "[\"chanchoalhorno.png\"]"],...
+...                              ^
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected ']', expecting keyword_end
+...o", "[\"chanchoalhorno.png\"]"], ["arroz con huevo", "almuer...
+...                              ^
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected ',', expecting keyword_end
+...oz", "[\"arrozconuevo.png\"]"], ["sopa negra", "cena", "[\"f...
+...                              ^
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected ',', expecting keyword_end
+... duro", "[\"sopanegra.png\"]"], ["cereal", "desayuno", "[\"c...
+...                              ^
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected ',', expecting keyword_end
+...la leche", "[\"cereal.png\"]"], ["macarrones", "almuerzo", "...
+...                              ^
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected ',', expecting keyword_end
+...ueso", "[\"macarrones.png\"]"], ["arepas", "desayuno", "[\"l...
+...                              ^
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected ']', expecting keyword_end
+...el sarten", "[\"arepa.png\"]"]]")
+...                              ^
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:81: unterminated string meets end of file
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:81: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected $undefined, expecting ']'
+app/controllers/recipes_controller.rb:18: syntax error, unexpected ',', expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected ',', expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected ']', expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected ',', expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected ',', expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected ',', expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected ',', expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected ']', expecting keyword_end
+app/controllers/recipes_controller.rb:81: unterminated string meets end of file
+app/controllers/recipes_controller.rb:81: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/recipes" for ::1 at 2019-06-03 10:19:54 -0600
+  
+SyntaxError (/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting ')'
+...     @recipes = JSON("[["puerco asado", "cena", ["puerco", "...
+...                         ^~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...= JSON("[["puerco asado", "cena", ["puerco", "sal", "pimient...
+...                           ^~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...puerco asado", "cena", ["puerco", "sal", "pimienta"], "embar...
+...                         ^~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...asado", "cena", ["puerco", "sal", "pimienta"], "embarre el p...
+...                            ^~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...a", ["puerco", "sal", "pimienta"], "embarre el puerco de sal...
+...                       ^~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...", "sal", "pimienta"], "embarre el puerco de sal y pimienta ...
+...                        ^~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...alo al fuego", ["chanchoalhorno.png"]], ["arroz con huevo", ...
+...                 ^~~~~~~~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+..."chanchoalhorno.png"]], ["arroz con huevo", "almuerzo", ["ar...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+..., ["arroz con huevo", "almuerzo", ["arroz", "huevo"], "ponga...
+...                       ^~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...con huevo", "almuerzo", ["arroz", "huevo"], "ponga a hacer e...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...", "almuerzo", ["arroz", "huevo"], "ponga a hacer el huevo c...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...zo", ["arroz", "huevo"], "ponga a hacer el huevo como si fue...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...grega el arroz", ["arrozconuevo.png"]], ["sopa negra", "cena...
+...                   ^~~~~~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+..., ["arrozconuevo.png"]], ["sopa negra", "cena", ["frijoles",...
+...                           ^~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...vo.png"]], ["sopa negra", "cena", ["frijoles", "huevo"], "ha...
+...                           ^~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...sopa negra", "cena", ["frijoles", "huevo"], "haga frijoles y...
+...                       ^~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...a", "cena", ["frijoles", "huevo"], "haga frijoles y agregue ...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...", ["frijoles", "huevo"], "haga frijoles y agregue el huevo ...
+...                           ^~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...que se ponga duro", ["sopanegra.png"]], ["cereal", "desayuno...
+...                      ^~~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...", ["sopanegra.png"]], ["cereal", "desayuno", ["cereal", "le...
+...                         ^~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...ra.png"]], ["cereal", "desayuno", ["cereal", "leche"], "pong...
+...                       ^~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...["cereal", "desayuno", ["cereal", "leche"], "ponga el cereal...
+...                         ^~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+..., "desayuno", ["cereal", "leche"], "ponga el cereal en un pl...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...o", ["cereal", "leche"], "ponga el cereal en un plato hondo ...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...o y agregue la leche", ["cereal.png"]], ["macarrones", "almu...
+...                         ^~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+..., ["cereal.png"]], ["macarrones", "almuerzo", ["espaguetti",...
+...                     ^~~~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...ng"]], ["macarrones", "almuerzo", ["espaguetti", "salsa de t...
+...                       ^~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...ones", "almuerzo", ["espaguetti", "salsa de tomate", "queso"...
+...                     ^~~~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...lmuerzo", ["espaguetti", "salsa de tomate", "queso"], "cocin...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...tti", "salsa de tomate", "queso"], "cocine los espaguetties,...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...a de tomate", "queso"], "cocine los espaguetties, agregue la...
+...                         ^~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+...ne los espaguetties, agregue la salsa y luego el queso", ["m...
+...                             ^~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...y luego el queso", ["macarrones.png"]], ["arepas", "desayuno...
+...                     ^~~~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+..., ["macarrones.png"]], ["arepas", "desayuno", ["leche", "pol...
+...                         ^~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...es.png"]], ["arepas", "desayuno", ["leche", "polvito de arep...
+...                       ^~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+... ["arepas", "desayuno", ["leche", "polvito de arepa", "azuca...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+... "desayuno", ["leche", "polvito de arepa", "azucar", "huevo"...
+...                        ^~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...e", "polvito de arepa", "azucar", "huevo"], "haga una masa c...
+...                         ^~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...ito de arepa", "azucar", "huevo"], "haga una masa con el pol...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...epa", "azucar", "huevo"], "haga una masa con el polvo, la le...
+...                           ^~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+...una masa con el polvo, la leche y el huevo, agrega azucar al...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+...leche y el huevo, agrega azucar al gusto y frie arepitas en ...
+...                         ^~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...arepitas en el sarten", ["arepa.png"]]]")
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected ')', expecting keyword_end
+...n el sarten", ["arepa.png"]]]")
+...                              ^
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:81: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected ')', expecting keyword_end
+app/controllers/recipes_controller.rb:81: syntax error, unexpected keyword_end, expecting end-of-input
+Started POST "/auth/login?email=paulozuniga17@gmail.com&password=[FILTERED]" for ::1 at 2019-06-03 10:20:28 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paulo/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by AuthenticationController#login as */*
+  Parameters: {"email"=>"paulozuniga17@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "paulozuniga17@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6
+Completed 200 OK in 170ms (Views: 0.5ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/recipes" for ::1 at 2019-06-03 10:20:41 -0600
+  
+SyntaxError (/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting ')'
+...     @recipes = JSON("[["puerco asado", "cena", ["puerco", "...
+...                         ^~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...= JSON("[["puerco asado", "cena", ["puerco", "sal", "pimient...
+...                           ^~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...puerco asado", "cena", ["puerco", "sal", "pimienta"], "embar...
+...                         ^~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...asado", "cena", ["puerco", "sal", "pimienta"], "embarre el p...
+...                            ^~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...a", ["puerco", "sal", "pimienta"], "embarre el puerco de sal...
+...                       ^~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...", "sal", "pimienta"], "embarre el puerco de sal y pimienta ...
+...                        ^~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...alo al fuego", ["chanchoalhorno.png"]], ["arroz con huevo", ...
+...                 ^~~~~~~~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+..."chanchoalhorno.png"]], ["arroz con huevo", "almuerzo", ["ar...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+..., ["arroz con huevo", "almuerzo", ["arroz", "huevo"], "ponga...
+...                       ^~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...con huevo", "almuerzo", ["arroz", "huevo"], "ponga a hacer e...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...", "almuerzo", ["arroz", "huevo"], "ponga a hacer el huevo c...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...zo", ["arroz", "huevo"], "ponga a hacer el huevo como si fue...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...grega el arroz", ["arrozconuevo.png"]], ["sopa negra", "cena...
+...                   ^~~~~~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+..., ["arrozconuevo.png"]], ["sopa negra", "cena", ["frijoles",...
+...                           ^~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...vo.png"]], ["sopa negra", "cena", ["frijoles", "huevo"], "ha...
+...                           ^~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...sopa negra", "cena", ["frijoles", "huevo"], "haga frijoles y...
+...                       ^~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...a", "cena", ["frijoles", "huevo"], "haga frijoles y agregue ...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...", ["frijoles", "huevo"], "haga frijoles y agregue el huevo ...
+...                           ^~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...que se ponga duro", ["sopanegra.png"]], ["cereal", "desayuno...
+...                      ^~~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...", ["sopanegra.png"]], ["cereal", "desayuno", ["cereal", "le...
+...                         ^~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...ra.png"]], ["cereal", "desayuno", ["cereal", "leche"], "pong...
+...                       ^~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...["cereal", "desayuno", ["cereal", "leche"], "ponga el cereal...
+...                         ^~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+..., "desayuno", ["cereal", "leche"], "ponga el cereal en un pl...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...o", ["cereal", "leche"], "ponga el cereal en un plato hondo ...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...o y agregue la leche", ["cereal.png"]], ["macarrones", "almu...
+...                         ^~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+..., ["cereal.png"]], ["macarrones", "almuerzo", ["espaguetti",...
+...                     ^~~~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...ng"]], ["macarrones", "almuerzo", ["espaguetti", "salsa de t...
+...                       ^~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...ones", "almuerzo", ["espaguetti", "salsa de tomate", "queso"...
+...                     ^~~~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...lmuerzo", ["espaguetti", "salsa de tomate", "queso"], "cocin...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...tti", "salsa de tomate", "queso"], "cocine los espaguetties,...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...a de tomate", "queso"], "cocine los espaguetties, agregue la...
+...                         ^~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+...ne los espaguetties, agregue la salsa y luego el queso", ["m...
+...                             ^~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...y luego el queso", ["macarrones.png"]], ["arepas", "desayuno...
+...                     ^~~~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+..., ["macarrones.png"]], ["arepas", "desayuno", ["leche", "pol...
+...                         ^~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...es.png"]], ["arepas", "desayuno", ["leche", "polvito de arep...
+...                       ^~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+... ["arepas", "desayuno", ["leche", "polvito de arepa", "azuca...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+... "desayuno", ["leche", "polvito de arepa", "azucar", "huevo"...
+...                        ^~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...e", "polvito de arepa", "azucar", "huevo"], "haga una masa c...
+...                         ^~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...ito de arepa", "azucar", "huevo"], "haga una masa con el pol...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...epa", "azucar", "huevo"], "haga una masa con el polvo, la le...
+...                           ^~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+...una masa con el polvo, la leche y el huevo, agrega azucar al...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+...leche y el huevo, agrega azucar al gusto y frie arepitas en ...
+...                         ^~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...arepitas en el sarten", ["arepa.png"]]]")
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected ')', expecting keyword_end
+...n el sarten", ["arepa.png"]]]")
+...                              ^
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:81: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected ')', expecting keyword_end
+app/controllers/recipes_controller.rb:81: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/recipes" for ::1 at 2019-06-03 10:23:05 -0600
+  
+SyntaxError (/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected '}', expecting =>
+...en el sarten", ["arepa.png"]]]})
+...                              ^):
+  
+app/controllers/recipes_controller.rb:18: syntax error, unexpected '}', expecting =>
+Started GET "/recipes" for ::1 at 2019-06-03 10:49:59 -0600
+Processing by RecipesController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Completed 500 Internal Server Error in 715ms (ActiveRecord: 1.0ms)
+
+
+  
+TypeError (no implicit conversion of Array into String):
+  
+app/controllers/recipes_controller.rb:19:in `block in index'
+app/controllers/recipes_controller.rb:16:in `index'
+Started GET "/recipes" for ::1 at 2019-06-03 10:50:34 -0600
+  
+SyntaxError (/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+      file = "[["puerco asado", "cena", ["puerco", "...
+                 ^~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...file = "[["puerco asado", "cena", ["puerco", "sal", "pimient...
+...                           ^~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...puerco asado", "cena", ["puerco", "sal", "pimienta"], "embar...
+...                         ^~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...asado", "cena", ["puerco", "sal", "pimienta"], "embarre el p...
+...                            ^~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...a", ["puerco", "sal", "pimienta"], "embarre el puerco de sal...
+...                       ^~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...", "sal", "pimienta"], "embarre el puerco de sal y pimienta ...
+...                        ^~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...alo al fuego", ["chanchoalhorno.png"]], ["arroz con huevo", ...
+...                 ^~~~~~~~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+..."chanchoalhorno.png"]], ["arroz con huevo", "almuerzo", ["ar...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+..., ["arroz con huevo", "almuerzo", ["arroz", "huevo"], "ponga...
+...                       ^~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...con huevo", "almuerzo", ["arroz", "huevo"], "ponga a hacer e...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...", "almuerzo", ["arroz", "huevo"], "ponga a hacer el huevo c...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...zo", ["arroz", "huevo"], "ponga a hacer el huevo como si fue...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...grega el arroz", ["arrozconuevo.png"]], ["sopa negra", "cena...
+...                   ^~~~~~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+..., ["arrozconuevo.png"]], ["sopa negra", "cena", ["frijoles",...
+...                           ^~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...vo.png"]], ["sopa negra", "cena", ["frijoles", "huevo"], "ha...
+...                           ^~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...sopa negra", "cena", ["frijoles", "huevo"], "haga frijoles y...
+...                       ^~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...a", "cena", ["frijoles", "huevo"], "haga frijoles y agregue ...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...", ["frijoles", "huevo"], "haga frijoles y agregue el huevo ...
+...                           ^~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...que se ponga duro", ["sopanegra.png"]], ["cereal", "desayuno...
+...                      ^~~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...", ["sopanegra.png"]], ["cereal", "desayuno", ["cereal", "le...
+...                         ^~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...ra.png"]], ["cereal", "desayuno", ["cereal", "leche"], "pong...
+...                       ^~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...["cereal", "desayuno", ["cereal", "leche"], "ponga el cereal...
+...                         ^~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+..., "desayuno", ["cereal", "leche"], "ponga el cereal en un pl...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...o", ["cereal", "leche"], "ponga el cereal en un plato hondo ...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...o y agregue la leche", ["cereal.png"]], ["macarrones", "almu...
+...                         ^~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+..., ["cereal.png"]], ["macarrones", "almuerzo", ["espaguetti",...
+...                     ^~~~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...ng"]], ["macarrones", "almuerzo", ["espaguetti", "salsa de t...
+...                       ^~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...ones", "almuerzo", ["espaguetti", "salsa de tomate", "queso"...
+...                     ^~~~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...lmuerzo", ["espaguetti", "salsa de tomate", "queso"], "cocin...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...tti", "salsa de tomate", "queso"], "cocine los espaguetties,...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...a de tomate", "queso"], "cocine los espaguetties, agregue la...
+...                         ^~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+...ne los espaguetties, agregue la salsa y luego el queso", ["m...
+...                             ^~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...y luego el queso", ["macarrones.png"]], ["arepas", "desayuno...
+...                     ^~~~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+..., ["macarrones.png"]], ["arepas", "desayuno", ["leche", "pol...
+...                         ^~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...es.png"]], ["arepas", "desayuno", ["leche", "polvito de arep...
+...                       ^~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+... ["arepas", "desayuno", ["leche", "polvito de arepa", "azuca...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+... "desayuno", ["leche", "polvito de arepa", "azucar", "huevo"...
+...                        ^~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...e", "polvito de arepa", "azucar", "huevo"], "haga una masa c...
+...                         ^~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...ito de arepa", "azucar", "huevo"], "haga una masa con el pol...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...epa", "azucar", "huevo"], "haga una masa con el polvo, la le...
+...                           ^~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+...una masa con el polvo, la leche y el huevo, agrega azucar al...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+...leche y el huevo, agrega azucar al gusto y frie arepitas en ...
+...                         ^~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...arepitas en el sarten", ["arepa.png"]]]"
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:82: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:82: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/recipes" for ::1 at 2019-06-03 11:14:54 -0600
+  
+SyntaxError (/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+      file = "{"recetas": [["puerco asado", "cena", ...
+                ^~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...  file = "{"recetas": [["puerco asado", "cena", ["puerco", "...
+...                         ^~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...cetas": [["puerco asado", "cena", ["puerco", "sal", "pimient...
+...                           ^~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...puerco asado", "cena", ["puerco", "sal", "pimienta"], "embar...
+...                         ^~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...asado", "cena", ["puerco", "sal", "pimienta"], "embarre el p...
+...                            ^~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...a", ["puerco", "sal", "pimienta"], "embarre el puerco de sal...
+...                       ^~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...", "sal", "pimienta"], "embarre el puerco de sal y pimienta ...
+...                        ^~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...alo al fuego", ["chanchoalhorno.png"]], ["arroz con huevo", ...
+...                 ^~~~~~~~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+..."chanchoalhorno.png"]], ["arroz con huevo", "almuerzo", ["ar...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+..., ["arroz con huevo", "almuerzo", ["arroz", "huevo"], "ponga...
+...                       ^~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...con huevo", "almuerzo", ["arroz", "huevo"], "ponga a hacer e...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...", "almuerzo", ["arroz", "huevo"], "ponga a hacer el huevo c...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...zo", ["arroz", "huevo"], "ponga a hacer el huevo como si fue...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...grega el arroz", ["arrozconuevo.png"]], ["sopa negra", "cena...
+...                   ^~~~~~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+..., ["arrozconuevo.png"]], ["sopa negra", "cena", ["frijoles",...
+...                           ^~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...vo.png"]], ["sopa negra", "cena", ["frijoles", "huevo"], "ha...
+...                           ^~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...sopa negra", "cena", ["frijoles", "huevo"], "haga frijoles y...
+...                       ^~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...a", "cena", ["frijoles", "huevo"], "haga frijoles y agregue ...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...", ["frijoles", "huevo"], "haga frijoles y agregue el huevo ...
+...                           ^~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...que se ponga duro", ["sopanegra.png"]], ["cereal", "desayuno...
+...                      ^~~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...", ["sopanegra.png"]], ["cereal", "desayuno", ["cereal", "le...
+...                         ^~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...ra.png"]], ["cereal", "desayuno", ["cereal", "leche"], "pong...
+...                       ^~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...["cereal", "desayuno", ["cereal", "leche"], "ponga el cereal...
+...                         ^~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+..., "desayuno", ["cereal", "leche"], "ponga el cereal en un pl...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...o", ["cereal", "leche"], "ponga el cereal en un plato hondo ...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...o y agregue la leche", ["cereal.png"]], ["macarrones", "almu...
+...                         ^~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+..., ["cereal.png"]], ["macarrones", "almuerzo", ["espaguetti",...
+...                     ^~~~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...ng"]], ["macarrones", "almuerzo", ["espaguetti", "salsa de t...
+...                       ^~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...ones", "almuerzo", ["espaguetti", "salsa de tomate", "queso"...
+...                     ^~~~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...lmuerzo", ["espaguetti", "salsa de tomate", "queso"], "cocin...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...tti", "salsa de tomate", "queso"], "cocine los espaguetties,...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...a de tomate", "queso"], "cocine los espaguetties, agregue la...
+...                         ^~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+...ne los espaguetties, agregue la salsa y luego el queso", ["m...
+...                             ^~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...y luego el queso", ["macarrones.png"]], ["arepas", "desayuno...
+...                     ^~~~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+..., ["macarrones.png"]], ["arepas", "desayuno", ["leche", "pol...
+...                         ^~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...es.png"]], ["arepas", "desayuno", ["leche", "polvito de arep...
+...                       ^~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+... ["arepas", "desayuno", ["leche", "polvito de arepa", "azuca...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+... "desayuno", ["leche", "polvito de arepa", "azucar", "huevo"...
+...                        ^~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...e", "polvito de arepa", "azucar", "huevo"], "haga una masa c...
+...                         ^~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...ito de arepa", "azucar", "huevo"], "haga una masa con el pol...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...epa", "azucar", "huevo"], "haga una masa con el polvo, la le...
+...                           ^~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+...una masa con el polvo, la leche y el huevo, agrega azucar al...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+...leche y el huevo, agrega azucar al gusto y frie arepitas en ...
+...                         ^~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...arepitas en el sarten", ["arepa.png"]]]}"
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:82: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:82: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/recipes" for ::1 at 2019-06-03 11:19:23 -0600
+  
+SyntaxError (/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+      file = "{"recetas": [["puerco asado", "cena", ...
+                ^~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...  file = "{"recetas": [["puerco asado", "cena", ["puerco", "...
+...                         ^~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...cetas": [["puerco asado", "cena", ["puerco", "sal", "pimient...
+...                           ^~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...puerco asado", "cena", ["puerco", "sal", "pimienta"], "embar...
+...                         ^~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...asado", "cena", ["puerco", "sal", "pimienta"], "embarre el p...
+...                            ^~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...a", ["puerco", "sal", "pimienta"], "embarre el puerco de sal...
+...                       ^~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...", "sal", "pimienta"], "embarre el puerco de sal y pimienta ...
+...                        ^~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...alo al fuego", ["chanchoalhorno.png"]], ["arroz con huevo", ...
+...                 ^~~~~~~~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+..."chanchoalhorno.png"]], ["arroz con huevo", "almuerzo", ["ar...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+..., ["arroz con huevo", "almuerzo", ["arroz", "huevo"], "ponga...
+...                       ^~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...con huevo", "almuerzo", ["arroz", "huevo"], "ponga a hacer e...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...", "almuerzo", ["arroz", "huevo"], "ponga a hacer el huevo c...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...zo", ["arroz", "huevo"], "ponga a hacer el huevo como si fue...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...grega el arroz", ["arrozconuevo.png"]], ["sopa negra", "cena...
+...                   ^~~~~~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+..., ["arrozconuevo.png"]], ["sopa negra", "cena", ["frijoles",...
+...                           ^~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...vo.png"]], ["sopa negra", "cena", ["frijoles", "huevo"], "ha...
+...                           ^~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...sopa negra", "cena", ["frijoles", "huevo"], "haga frijoles y...
+...                       ^~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...a", "cena", ["frijoles", "huevo"], "haga frijoles y agregue ...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...", ["frijoles", "huevo"], "haga frijoles y agregue el huevo ...
+...                           ^~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...que se ponga duro", ["sopanegra.png"]], ["cereal", "desayuno...
+...                      ^~~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...", ["sopanegra.png"]], ["cereal", "desayuno", ["cereal", "le...
+...                         ^~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...ra.png"]], ["cereal", "desayuno", ["cereal", "leche"], "pong...
+...                       ^~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...["cereal", "desayuno", ["cereal", "leche"], "ponga el cereal...
+...                         ^~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+..., "desayuno", ["cereal", "leche"], "ponga el cereal en un pl...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...o", ["cereal", "leche"], "ponga el cereal en un plato hondo ...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...o y agregue la leche", ["cereal.png"]], ["macarrones", "almu...
+...                         ^~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+..., ["cereal.png"]], ["macarrones", "almuerzo", ["espaguetti",...
+...                     ^~~~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...ng"]], ["macarrones", "almuerzo", ["espaguetti", "salsa de t...
+...                       ^~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...ones", "almuerzo", ["espaguetti", "salsa de tomate", "queso"...
+...                     ^~~~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...lmuerzo", ["espaguetti", "salsa de tomate", "queso"], "cocin...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...tti", "salsa de tomate", "queso"], "cocine los espaguetties,...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...a de tomate", "queso"], "cocine los espaguetties, agregue la...
+...                         ^~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+...ne los espaguetties, agregue la salsa y luego el queso", ["m...
+...                             ^~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...y luego el queso", ["macarrones.png"]], ["arepas", "desayuno...
+...                     ^~~~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+..., ["macarrones.png"]], ["arepas", "desayuno", ["leche", "pol...
+...                         ^~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...es.png"]], ["arepas", "desayuno", ["leche", "polvito de arep...
+...                       ^~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+... ["arepas", "desayuno", ["leche", "polvito de arepa", "azuca...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+... "desayuno", ["leche", "polvito de arepa", "azucar", "huevo"...
+...                        ^~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...e", "polvito de arepa", "azucar", "huevo"], "haga una masa c...
+...                         ^~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...ito de arepa", "azucar", "huevo"], "haga una masa con el pol...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...epa", "azucar", "huevo"], "haga una masa con el polvo, la le...
+...                           ^~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+...una masa con el polvo, la leche y el huevo, agrega azucar al...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+...leche y el huevo, agrega azucar al gusto y frie arepitas en ...
+...                         ^~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...arepitas en el sarten", ["arepa.png"]]]}"
+...                          ^~~~~):
+  
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+Started GET "/recipes" for ::1 at 2019-06-03 11:24:28 -0600
+  
+SyntaxError (/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+      file = "{"recetas": [["puerco asado", "cena", ...
+                ^~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...  file = "{"recetas": [["puerco asado", "cena", ["puerco", "...
+...                         ^~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...cetas": [["puerco asado", "cena", ["puerco", "sal", "pimient...
+...                           ^~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...puerco asado", "cena", ["puerco", "sal", "pimienta"], "embar...
+...                         ^~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...asado", "cena", ["puerco", "sal", "pimienta"], "embarre el p...
+...                            ^~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...a", ["puerco", "sal", "pimienta"], "embarre el puerco de sal...
+...                       ^~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...", "sal", "pimienta"], "embarre el puerco de sal y pimienta ...
+...                        ^~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...alo al fuego", ["chanchoalhorno.png"]], ["arroz con huevo", ...
+...                 ^~~~~~~~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+..."chanchoalhorno.png"]], ["arroz con huevo", "almuerzo", ["ar...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+..., ["arroz con huevo", "almuerzo", ["arroz", "huevo"], "ponga...
+...                       ^~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...con huevo", "almuerzo", ["arroz", "huevo"], "ponga a hacer e...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...", "almuerzo", ["arroz", "huevo"], "ponga a hacer el huevo c...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...zo", ["arroz", "huevo"], "ponga a hacer el huevo como si fue...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...grega el arroz", ["arrozconuevo.png"]], ["sopa negra", "cena...
+...                   ^~~~~~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+..., ["arrozconuevo.png"]], ["sopa negra", "cena", ["frijoles",...
+...                           ^~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...vo.png"]], ["sopa negra", "cena", ["frijoles", "huevo"], "ha...
+...                           ^~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...sopa negra", "cena", ["frijoles", "huevo"], "haga frijoles y...
+...                       ^~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...a", "cena", ["frijoles", "huevo"], "haga frijoles y agregue ...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...", ["frijoles", "huevo"], "haga frijoles y agregue el huevo ...
+...                           ^~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...que se ponga duro", ["sopanegra.png"]], ["cereal", "desayuno...
+...                      ^~~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...", ["sopanegra.png"]], ["cereal", "desayuno", ["cereal", "le...
+...                         ^~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...ra.png"]], ["cereal", "desayuno", ["cereal", "leche"], "pong...
+...                       ^~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...["cereal", "desayuno", ["cereal", "leche"], "ponga el cereal...
+...                         ^~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+..., "desayuno", ["cereal", "leche"], "ponga el cereal en un pl...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...o", ["cereal", "leche"], "ponga el cereal en un plato hondo ...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...o y agregue la leche", ["cereal.png"]], ["macarrones", "almu...
+...                         ^~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+..., ["cereal.png"]], ["macarrones", "almuerzo", ["espaguetti",...
+...                     ^~~~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...ng"]], ["macarrones", "almuerzo", ["espaguetti", "salsa de t...
+...                       ^~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...ones", "almuerzo", ["espaguetti", "salsa de tomate", "queso"...
+...                     ^~~~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...lmuerzo", ["espaguetti", "salsa de tomate", "queso"], "cocin...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...tti", "salsa de tomate", "queso"], "cocine los espaguetties,...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...a de tomate", "queso"], "cocine los espaguetties, agregue la...
+...                         ^~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+...ne los espaguetties, agregue la salsa y luego el queso", ["m...
+...                             ^~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...y luego el queso", ["macarrones.png"]], ["arepas", "desayuno...
+...                     ^~~~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+..., ["macarrones.png"]], ["arepas", "desayuno", ["leche", "pol...
+...                         ^~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...es.png"]], ["arepas", "desayuno", ["leche", "polvito de arep...
+...                       ^~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+... ["arepas", "desayuno", ["leche", "polvito de arepa", "azuca...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+... "desayuno", ["leche", "polvito de arepa", "azucar", "huevo"...
+...                        ^~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...e", "polvito de arepa", "azucar", "huevo"], "haga una masa c...
+...                         ^~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...ito de arepa", "azucar", "huevo"], "haga una masa con el pol...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...epa", "azucar", "huevo"], "haga una masa con el polvo, la le...
+...                           ^~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+...una masa con el polvo, la leche y el huevo, agrega azucar al...
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+...leche y el huevo, agrega azucar al gusto y frie arepitas en ...
+...                         ^~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...arepitas en el sarten", ["arepa.png"]]]}"
+...                          ^~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:82: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:82: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/recipes" for ::1 at 2019-06-03 11:25:51 -0600
+  
+SyntaxError (/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+      file = "{"recetas": [["puerco asado", "cena", ...
+                ^~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...  file = "{"recetas": [["puerco asado", "cena", ["puerco", "...
+...                         ^~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...cetas": [["puerco asado", "cena", ["puerco", "sal", "pimient...
+...                           ^~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...puerco asado", "cena", ["puerco", "sal", "pimienta"], "embar...
+...                         ^~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...asado", "cena", ["puerco", "sal", "pimienta"], "embarre el p...
+...                            ^~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...a", ["puerco", "sal", "pimienta"], "embarre el puerco de sal...
+...                       ^~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...", "sal", "pimienta"], "embarre el puerco de sal y pimienta ...
+...                        ^~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...alo al fuego", ["chanchoalhorno.png"]]}"
+...                 ^~~~~~~~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:82: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:82: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/recipes" for ::1 at 2019-06-03 11:27:37 -0600
+  
+SyntaxError (/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+      file = "{"recetas": [["puerco asado", "cena", ...
+                ^~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...  file = "{"recetas": [["puerco asado", "cena", ["puerco", "...
+...                         ^~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...cetas": [["puerco asado", "cena", ["puerco", "sal", "pimient...
+...                           ^~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...puerco asado", "cena", ["puerco", "sal", "pimienta"], "embar...
+...                         ^~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...asado", "cena", ["puerco", "sal", "pimienta"], "embarre el p...
+...                            ^~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...a", ["puerco", "sal", "pimienta"], "embarre el puerco de sal...
+...                       ^~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...", "sal", "pimienta"], "embarre el puerco de sal y pimienta ...
+...                        ^~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...alo al fuego", ["chanchoalhorno.png"]]}"
+...                 ^~~~~~~~~~~~~~
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:82: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:18: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/controllers/recipes_controller.rb:82: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/recipes" for ::1 at 2019-06-03 11:32:20 -0600
+Processing by RecipesController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Completed 500 Internal Server Error in 726ms (ActiveRecord: 5.7ms)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - BC.txt):
+  
+app/controllers/recipes_controller.rb:18:in `read'
+app/controllers/recipes_controller.rb:18:in `block in index'
+app/controllers/recipes_controller.rb:16:in `index'
+Started GET "/recipes" for ::1 at 2019-06-03 11:33:43 -0600
+Processing by RecipesController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Completed 500 Internal Server Error in 2585ms (ActiveRecord: 1.8ms)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - /app/controllers/BC.txt):
+  
+app/controllers/recipes_controller.rb:18:in `read'
+app/controllers/recipes_controller.rb:18:in `block in index'
+app/controllers/recipes_controller.rb:16:in `index'
+Started GET "/recipes" for ::1 at 2019-06-03 11:36:38 -0600
+Processing by RecipesController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Completed 200 OK in 780ms (Views: 0.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/recipes" for ::1 at 2019-06-03 11:37:47 -0600
+Processing by RecipesController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Completed 200 OK in 706ms (Views: 0.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/recipes" for ::1 at 2019-06-03 11:48:42 -0600
+Processing by RecipesController#index as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Completed 500 Internal Server Error in 1381ms (ActiveRecord: 7.3ms)
+
+
+  
+JSON::ParserError (765: unexpected token at 'puerco
+sal
+pimienta
+arroz
+huevo
+frijoles
+huevo
+cereal
+leche
+espaguetti
+salsa de tomate
+queso
+leche
+polvito de arepa
+azucar
+huevo
+[["puerco asado", "cena", ["puerco", "sal", "pimienta"], "embarre el puerco de sal y pimienta y pongalo al fuego", ["chanchoalhorno.png"]], ["arroz con huevo", "almuerzo", ["arroz", "huevo"], "ponga a hacer el huevo como si fuese a ser pateado y agrega el arroz", ["arrozconuevo.png"]], ["sopa negra", "cena", ["frijoles", "huevo"], "haga frijoles y agregue el huevo sin pelar para que se ponga duro", ["sopanegra.png"]], ["cereal", "desayuno", ["cereal", "leche"], "ponga el cereal en un plato hondo y agregue la leche", ["cereal.png"]], ["macarrones", "almuerzo", ["espaguetti", "salsa de tomate", "queso"], "cocine los espaguetties, agregue la salsa y luego el queso", ["macarrones.png"]], ["arepas", "desayuno", ["leche", "polvito de arepa", "azucar", "huevo"], "haga una masa con el polvo, la leche y el huevo, agrega azucar al gusto y frie arepitas en el sarten", ["arepa.png"]]]
+[['puerco asado', 'cena', ['puerco', 'sal', 'pimienta'], 'embarre el puerco de sal y pimienta y pongalo al fuego', ['chanchoalhorno.png']], ['arroz con huevo', 'almuerzo', ['arroz', 'huevo'], 'ponga a hacer el huevo como si fuese a ser pateado y agrega el arroz', ['arrozconuevo.png']], ['sopa negra', 'cena', ['frijoles', 'huevo'], 'haga frijoles y agregue el huevo sin pelar para que se ponga duro', ['sopanegra.png']], ['cereal', 'desayuno', ['cereal', 'leche'], 'ponga el cereal en un plato hondo y agregue la leche', ['cereal.png']], ['macarrones', 'almuerzo', ['espaguetti', 'salsa de tomate', 'queso'], 'cocine los espaguetties, agregue la salsa y luego el queso', ['macarrones.png']], ['arepas', 'desayuno', ['leche', 'polvito de arepa', 'azucar', 'huevo'], 'haga una masa con el polvo, la leche y el huevo, agrega azucar al gusto y frie arepitas en el sarten', ['arepa.png']]]
+'):
+  
+app/controllers/recipes_controller.rb:17:in `block in index'
+app/controllers/recipes_controller.rb:16:in `index'
+Started GET "/recipes" for ::1 at 2019-06-03 11:50:54 -0600
+Processing by RecipesController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Completed 500 Internal Server Error in 1778ms (ActiveRecord: 0.1ms)
+
+
+  
+TypeError (no implicit conversion of Array into String):
+  
+app/controllers/recipes_controller.rb:19:in `block in index'
+app/controllers/recipes_controller.rb:16:in `index'
+Started GET "/recipes" for ::1 at 2019-06-03 11:51:56 -0600
+Processing by RecipesController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Completed 500 Internal Server Error in 1686ms (ActiveRecord: 1.0ms)
+
+
+  
+NameError (undefined local variable or method `recipes' for #<RecipesController:0x0000563edfb4dc90>
+Did you mean?  @recipes):
+  
+app/controllers/recipes_controller.rb:19:in `block in index'
+app/controllers/recipes_controller.rb:16:in `index'
+Started GET "/recipes" for ::1 at 2019-06-03 11:52:12 -0600
+Processing by RecipesController#index as */*
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Completed 500 Internal Server Error in 1181ms (ActiveRecord: 6.0ms)
+
+
+  
+TypeError (no implicit conversion of Array into String):
+  
+app/controllers/recipes_controller.rb:20:in `block in index'
+app/controllers/recipes_controller.rb:16:in `index'
+Started GET "/recipes" for ::1 at 2019-06-03 11:53:23 -0600
+Processing by RecipesController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Completed 200 OK in 1211ms (Views: 0.6ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/recipes" for ::1 at 2019-06-03 11:54:04 -0600
+Processing by RecipesController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Completed 200 OK in 1388ms (Views: 0.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/recipes" for ::1 at 2019-06-03 11:54:31 -0600
+Processing by RecipesController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Completed 200 OK in 1089ms (Views: 0.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/recipes" for ::1 at 2019-06-03 11:57:45 -0600
+Processing by RecipesController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Completed 200 OK in 1161ms (Views: 0.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/auth/login?email=paulozuniga17@gmail.com&password=[FILTERED]" for ::1 at 2019-06-03 12:01:18 -0600
+Processing by AuthenticationController#login as */*
+  Parameters: {"email"=>"paulozuniga17@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "paulozuniga17@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6
+Completed 200 OK in 165ms (Views: 0.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/recipes" for ::1 at 2019-06-03 12:01:32 -0600
+Processing by RecipesController#index as */*
+  [1m[36mUser Load (8.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Completed 200 OK in 1121ms (Views: 9.3ms | ActiveRecord: 8.6ms)
+
+

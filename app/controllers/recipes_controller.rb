@@ -8,7 +8,20 @@ class RecipesController < ApplicationController
   def index
     @recipes = []
     #extraer de prolog junto al parse
-    render json: @recipes, status: :ok
+    @hostname = "52.226.107.107"
+    @username = "paulozuniga"
+    @password = "Murcielago17"
+    @cmd = "python3 allRecipes.py"
+
+    Net::SSH.start(@hostname.to_s, @username.to_s, :password => @password.to_s) do |ssh|
+      @recipes = JSON(ssh.exec!("source pyswip_env/bin/activate;"+@cmd.to_s))
+      #file = File.read("#{Rails.root}/app/controllers/BC.txt")
+      #puts @recipes
+      @recipes = JSON.parse(@recipes.to_s)
+  		ssh.close
+    end
+
+    render json: {recipes: @recipes}, status: :ok
   end
 
   # GET /recipes/{recipe_name}

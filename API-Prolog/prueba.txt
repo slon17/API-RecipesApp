@@ -1,0 +1,5 @@
+receta('sopa','almuerzo',['agua','consome'],'echar agua',['sopa.png']).
+receta('sopa','almuerzo',['agua','consome'],'echar agua',['sopa.png']).
+receta('sopa','almuerzo',['agua','consome'],'echar agua',['sopa.png'])
+receta('sopa','almuerzo',['agua','consome'],'echar agua',['sopa.png'])
+receta('sopa','almuerzo',['agua','consome'],'echar agua',[sopa.png])

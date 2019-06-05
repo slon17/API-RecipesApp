@@ -2,14 +2,14 @@
 
 one:
   name: MyString
-  ingredients: MyText
-  steps: MyText
-  type: 
-  images: MyText
+  tipo: MyString
+  ingredients: MyString
+  steps: MyString
+  images: MyString
 
 two:
   name: MyString
-  ingredients: MyText
-  steps: MyText
-  type: 
-  images: MyText
+  tipo: MyString
+  ingredients: MyString
+  steps: MyString
+  images: MyString

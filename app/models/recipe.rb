@@ -1,7 +1,6 @@
 class Recipe < ApplicationRecord
-  serialize :ingredients, Array
-  serialize :steps, Array
-  serialize :images, Array
+  #serialize :ingredients, Array
+  #serialize :images, Array
 
   validates :name, presence: true, uniqueness: true
 

@@ -23,22 +23,57 @@ class RecipesController < ApplicationController
     render json: {recipes: @recipes}, status: :ok
   end
 
-  # GET /recipes/{recipe_name}
+  # GET /recipe-by-name/
   def show
-    #buscar receta mediante prolog
+    #buscar receta mediante prolog por nombre
     @hostname = "52.226.107.107"
     @username = "paulozuniga"
     @password = "Murcielago17"
     @cmd = "python3 recipeByName.py"
 
     Net::SSH.start(@hostname.to_s, @username.to_s, :password => @password.to_s) do |ssh|
-      @recipes = JSON(ssh.exec!("source pyswip_env/bin/activate;"+@cmd.to_s))
+      @recipes = JSON(ssh.exec!("source pyswip_env/bin/activate;"+@cmd.to_s+" "+params[:name].to_s))
       @recipes = JSON.parse(@recipes.to_s)
   		ssh.close
     end
 
     render json: {recipes: @recipes}, status: :ok
   end
+
+  # GET /recipe-by-type
+  def showType
+    #buscar receta mediante prolog por nombre
+    @hostname = "52.226.107.107"
+    @username = "paulozuniga"
+    @password = "Murcielago17"
+    @cmd = "python3 recipeByType.py"
+
+    Net::SSH.start(@hostname.to_s, @username.to_s, :password => @password.to_s) do |ssh|
+      @recipes = JSON(ssh.exec!("source pyswip_env/bin/activate;"+@cmd.to_s+" "+params[:tipo].to_s))
+      @recipes = JSON.parse(@recipes.to_s)
+  		ssh.close
+    end
+
+    render json: {recipes: @recipes}, status: :ok
+  end
+
+  # GET /recipe-by-ingredients
+  def showIngredients
+    #buscar receta mediante prolog por ingredientes
+    @hostname = "52.226.107.107"
+    @username = "paulozuniga"
+    @password = "Murcielago17"
+    @cmd = "python3 recipeByIngredients.py"
+
+    Net::SSH.start(@hostname.to_s, @username.to_s, :password => @password.to_s) do |ssh|
+      @recipes = JSON(ssh.exec!("source pyswip_env/bin/activate;"+@cmd.to_s+" "+params[:ingredients].to_s))
+      @recipes = JSON.parse(@recipes.to_s)
+  		ssh.close
+    end
+
+    render json: {recipes: @recipes}, status: :ok
+  end
+
 
   # POST /new-recipe
   def create
@@ -49,13 +84,14 @@ class RecipesController < ApplicationController
       @hostname = "52.226.107.107"
       @username = "paulozuniga"
       @password = "Murcielago17"
-      @cmd = "python3 newRecipe.py"+params[:name]+" "+params[:type]+" "+params[:ingredients]+params[:steps]+params[:images]
+      @cmd = "python3 newRecipe.py "+params[:name]+" "+params[:tipo]+" "+params[:ingredients]+" "+params[:steps]+" "+params[:images]
+      puts @cmd
 
       Net::SSH.start(@hostname.to_s, @username.to_s, :password => @password.to_s) do |ssh|
         response = ssh.exec!("source pyswip_env/bin/activate;"+@cmd.to_s)
     		ssh.close
       end
-      render json: {recipe: @recipe}, status: :ok
+      render json: {recipe: @recipe, response: response.to_s}, status: :ok
     else
       render json: { errors: @recipe.errors.full_messages },
              status: :unprocessable_entity

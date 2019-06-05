@@ -10,14 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_29_191821) do
+ActiveRecord::Schema.define(version: 2019_06_05_002829) do
 
   create_table "recipes", force: :cascade do |t|
     t.string "name"
-    t.text "ingredients"
-    t.text "steps"
-    t.string "type"
-    t.text "images"
+    t.string "tipo"
+    t.string "ingredients"
+    t.string "steps"
+    t.string "images"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

@@ -2092,3 +2092,701 @@ Processing by RecipesController#create as */*
 Completed 200 OK in 906ms (Views: 0.2ms | ActiveRecord: 4.2ms)
 
 
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paulo/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paulo/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paulo/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paulo/.rvm/gems/ruby-2.5.1/bin/rake:23
+Migrating to CreateRecipes (20190529191821)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/paulo/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (1.4ms)[0m  [1m[35mDROP TABLE "recipes"[0m
+  ↳ /home/paulo/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.2ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20190529191821"]]
+  ↳ /home/paulo/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (11.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/paulo/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paulo/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paulo/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paulo/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paulo/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paulo/.rvm/gems/ruby-2.5.1/bin/rake:23
+Migrating to CreateUsers (20190527004757)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/paulo/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (2.4ms)[0m  [1m[35mDROP TABLE "users"[0m
+  ↳ /home/paulo/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.2ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20190527004757"]]
+  ↳ /home/paulo/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (21.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/paulo/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paulo/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20190527004757)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20190527004757_create_users.rb:3
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar, "password_digest" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190527004757_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190527004757"]]
+  ↳ bin/rails:9
+  [1m[35m (13.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started POST "/?email=paulozuniga17@gmail.com&password=[FILTERED]" for ::1 at 2019-06-04 18:24:07 -0600
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paulo/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "paulozuniga17@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (5.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "paulozuniga17@gmail.com"], ["password_digest", "$2a$10$bKobnLPkZIePmmoeX.GRZeWvJJMH8anbAtZfLtgmFTVBhmcYG0.3O"], ["created_at", "2019-06-05 00:27:10.899371"], ["updated_at", "2019-06-05 00:27:10.899371"]]
+  [1m[35m (19.7ms)[0m  [1m[36mcommit transaction[0m
+Started POST "/auth/login?email=paulozuniga17@gmail.com&password=[FILTERED]" for ::1 at 2019-06-04 18:27:31 -0600
+Processing by AuthenticationController#login as */*
+  Parameters: {"email"=>"paulozuniga17@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "paulozuniga17@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6
+Completed 200 OK in 148ms (Views: 0.3ms | ActiveRecord: 6.1ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateRecipes (20190605002829)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20190605002829_create_recipes.rb:3
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE TABLE "recipes" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "tipo" varchar, "ingredients" varchar, "steps" varchar, "images" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190605002829_create_recipes.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190605002829"]]
+  ↳ bin/rails:9
+  [1m[35m (18.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started POST "/new-recipe?name=sopa&type=saca%20gomas&ingredients=agua,maggie&steps=echar%20maggie%20al%20agua%20y%20calentar&images=sopa.png" for ::1 at 2019-06-04 18:30:27 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paulo/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by RecipesController#create as */*
+  Parameters: {"name"=>"sopa", "type"=>"saca gomas", "ingredients"=>"agua,maggie", "steps"=>"echar maggie al agua y calentar", "images"=>"sopa.png"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Completed 500 Internal Server Error in 56ms (ActiveRecord: 1.7ms)
+
+
+  
+ActiveRecord::SerializationTypeMismatch (can't serialize `ingredients`: was supposed to be a Array, but was a String. -- "agua,maggie"):
+  
+app/controllers/recipes_controller.rb:46:in `create'
+Started POST "/new-recipe?name=sopa&type=saca%20gomas&ingredients=agua,maggie&steps=echar%20maggie%20al%20agua%20y%20calentar&images=sopa.png" for ::1 at 2019-06-04 18:33:36 -0600
+Processing by RecipesController#create as */*
+  Parameters: {"name"=>"sopa", "type"=>"saca gomas", "ingredients"=>"agua,maggie", "steps"=>"echar maggie al agua y calentar", "images"=>"sopa.png"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Completed 500 Internal Server Error in 66ms (ActiveRecord: 4.8ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'type' for Recipe.):
+  
+app/controllers/recipes_controller.rb:46:in `create'
+Started POST "/new-recipe?name=sopa&tipo=saca%20gomas&ingredients=agua,maggie&steps=echar%20maggie%20al%20agua%20y%20calentar&images=sopa.png" for ::1 at 2019-06-04 18:34:20 -0600
+Processing by RecipesController#create as */*
+  Parameters: {"name"=>"sopa", "tipo"=>"saca gomas", "ingredients"=>"agua,maggie", "steps"=>"echar maggie al agua y calentar", "images"=>"sopa.png"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Unpermitted parameter: :tipo
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/recipes_controller.rb:47
+  [1m[36mRecipe Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "recipes" WHERE "recipes"."name" = ? LIMIT ?[0m  [["name", "sopa"], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:47
+  [1m[36mRecipe Create (1.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "ingredients", "steps", "images", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "sopa"], ["ingredients", "agua,maggie"], ["steps", "echar maggie al agua y calentar"], ["images", "sopa.png"], ["created_at", "2019-06-05 00:34:20.795807"], ["updated_at", "2019-06-05 00:34:20.795807"]]
+  ↳ app/controllers/recipes_controller.rb:47
+  [1m[35m (14.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/recipes_controller.rb:47
+Completed 200 OK in 966ms (Views: 0.6ms | ActiveRecord: 19.0ms)
+
+
+Started POST "/new-recipe?name=sopa&tipo=saca%20gomas&ingredients=agua,maggie&steps=echar%20maggie%20al%20agua%20y%20calentar&images=sopa.png" for ::1 at 2019-06-04 18:36:07 -0600
+Processing by RecipesController#create as */*
+  Parameters: {"name"=>"sopa", "tipo"=>"saca gomas", "ingredients"=>"agua,maggie", "steps"=>"echar maggie al agua y calentar", "images"=>"sopa.png"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Unpermitted parameter: :tipo
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/recipes_controller.rb:47
+  [1m[36mRecipe Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "recipes" WHERE "recipes"."name" = ? LIMIT ?[0m  [["name", "sopa"], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:47
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/recipes_controller.rb:47
+Completed 422 Unprocessable Entity in 107ms (Views: 0.2ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/new-recipe?name=sopa1&tipo=saca%20gomas&ingredients=agua,maggie&steps=echar%20maggie%20al%20agua%20y%20calentar&images=sopa.png" for ::1 at 2019-06-04 18:36:16 -0600
+Processing by RecipesController#create as */*
+  Parameters: {"name"=>"sopa1", "tipo"=>"saca gomas", "ingredients"=>"agua,maggie", "steps"=>"echar maggie al agua y calentar", "images"=>"sopa.png"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Unpermitted parameter: :tipo
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/recipes_controller.rb:47
+  [1m[36mRecipe Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "recipes" WHERE "recipes"."name" = ? LIMIT ?[0m  [["name", "sopa1"], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:47
+  [1m[36mRecipe Create (1.9ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "ingredients", "steps", "images", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "sopa1"], ["ingredients", "agua,maggie"], ["steps", "echar maggie al agua y calentar"], ["images", "sopa.png"], ["created_at", "2019-06-05 00:36:16.271829"], ["updated_at", "2019-06-05 00:36:16.271829"]]
+  ↳ app/controllers/recipes_controller.rb:47
+  [1m[35m (12.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/recipes_controller.rb:47
+Completed 500 Internal Server Error in 1093ms (ActiveRecord: 14.9ms)
+
+
+  
+NameError (undefined local variable or method `respose' for #<RecipesController:0x000055a8da4854d0>
+Did you mean?  response
+               response=
+               @_response):
+  
+app/controllers/recipes_controller.rb:58:in `create'
+Started POST "/new-recipe?name=sopa1&tipo=saca%20gomas&ingredients=agua,maggie&steps=echar%20maggie%20al%20agua%20y%20calentar&images=sopa.png" for ::1 at 2019-06-04 18:36:43 -0600
+Processing by RecipesController#create as */*
+  Parameters: {"name"=>"sopa1", "tipo"=>"saca gomas", "ingredients"=>"agua,maggie", "steps"=>"echar maggie al agua y calentar", "images"=>"sopa.png"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Unpermitted parameter: :tipo
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/recipes_controller.rb:47
+  [1m[36mRecipe Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "recipes" WHERE "recipes"."name" = ? LIMIT ?[0m  [["name", "sopa1"], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:47
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/recipes_controller.rb:47
+Completed 422 Unprocessable Entity in 76ms (Views: 0.2ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/new-recipe?name=sopa2&tipo=saca%20gomas&ingredients=agua,maggie&steps=echar%20maggie%20al%20agua%20y%20calentar&images=sopa.png" for ::1 at 2019-06-04 18:36:49 -0600
+Processing by RecipesController#create as */*
+  Parameters: {"name"=>"sopa2", "tipo"=>"saca gomas", "ingredients"=>"agua,maggie", "steps"=>"echar maggie al agua y calentar", "images"=>"sopa.png"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Unpermitted parameter: :tipo
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/recipes_controller.rb:47
+  [1m[36mRecipe Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "recipes" WHERE "recipes"."name" = ? LIMIT ?[0m  [["name", "sopa2"], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:47
+  [1m[36mRecipe Create (3.6ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "ingredients", "steps", "images", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "sopa2"], ["ingredients", "agua,maggie"], ["steps", "echar maggie al agua y calentar"], ["images", "sopa.png"], ["created_at", "2019-06-05 00:36:49.766674"], ["updated_at", "2019-06-05 00:36:49.766674"]]
+  ↳ app/controllers/recipes_controller.rb:47
+  [1m[35m (21.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/recipes_controller.rb:47
+Completed 500 Internal Server Error in 948ms (ActiveRecord: 25.2ms)
+
+
+  
+SystemStackError (stack level too deep):
+  
+app/controllers/recipes_controller.rb:58:in `create'
+Started POST "/new-recipe?name=sopa2&tipo=saca%20gomas&ingredients=agua,maggie&steps=echar%20maggie%20al%20agua%20y%20calentar&images=sopa.png" for ::1 at 2019-06-04 18:39:05 -0600
+Processing by RecipesController#create as */*
+  Parameters: {"name"=>"sopa2", "tipo"=>"saca gomas", "ingredients"=>"agua,maggie", "steps"=>"echar maggie al agua y calentar", "images"=>"sopa.png"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Unpermitted parameter: :tipo
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/recipes_controller.rb:47
+  [1m[36mRecipe Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "recipes" WHERE "recipes"."name" = ? LIMIT ?[0m  [["name", "sopa2"], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:47
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/recipes_controller.rb:47
+Completed 422 Unprocessable Entity in 13ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/new-recipe?name=sopa3&tipo=saca%20gomas&ingredients=agua,maggie&steps=echar%20maggie%20al%20agua%20y%20calentar&images=sopa.png" for ::1 at 2019-06-04 18:39:12 -0600
+Processing by RecipesController#create as */*
+  Parameters: {"name"=>"sopa3", "tipo"=>"saca gomas", "ingredients"=>"agua,maggie", "steps"=>"echar maggie al agua y calentar", "images"=>"sopa.png"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Unpermitted parameter: :tipo
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/recipes_controller.rb:47
+  [1m[36mRecipe Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "recipes" WHERE "recipes"."name" = ? LIMIT ?[0m  [["name", "sopa3"], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:47
+  [1m[36mRecipe Create (3.1ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "ingredients", "steps", "images", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "sopa3"], ["ingredients", "agua,maggie"], ["steps", "echar maggie al agua y calentar"], ["images", "sopa.png"], ["created_at", "2019-06-05 00:39:12.162368"], ["updated_at", "2019-06-05 00:39:12.162368"]]
+  ↳ app/controllers/recipes_controller.rb:47
+  [1m[35m (15.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/recipes_controller.rb:47
+Completed 500 Internal Server Error in 931ms (ActiveRecord: 19.0ms)
+
+
+  
+SystemStackError (stack level too deep):
+  
+app/controllers/recipes_controller.rb:58:in `create'
+Started POST "/new-recipe?name=sopa4&tipo=saca%20gomas&ingredients=agua,maggie&steps=echar%20maggie%20al%20agua%20y%20calentar&images=sopa.png" for ::1 at 2019-06-04 18:40:21 -0600
+Processing by RecipesController#create as */*
+  Parameters: {"name"=>"sopa4", "tipo"=>"saca gomas", "ingredients"=>"agua,maggie", "steps"=>"echar maggie al agua y calentar", "images"=>"sopa.png"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Unpermitted parameter: :tipo
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/recipes_controller.rb:47
+  [1m[36mRecipe Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "recipes" WHERE "recipes"."name" = ? LIMIT ?[0m  [["name", "sopa4"], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:47
+  [1m[36mRecipe Create (1.5ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "ingredients", "steps", "images", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "sopa4"], ["ingredients", "agua,maggie"], ["steps", "echar maggie al agua y calentar"], ["images", "sopa.png"], ["created_at", "2019-06-05 00:40:21.451867"], ["updated_at", "2019-06-05 00:40:21.451867"]]
+  ↳ app/controllers/recipes_controller.rb:47
+  [1m[35m (13.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/recipes_controller.rb:47
+Completed 200 OK in 888ms (Views: 0.6ms | ActiveRecord: 17.1ms)
+
+
+Started POST "/new-recipe?name=sopa4&tipo=saca%20gomas&ingredients=agua,maggie&steps=echar%20maggie%20al%20agua%20y%20calentar&images=sopa.png" for ::1 at 2019-06-04 18:48:51 -0600
+Processing by RecipesController#create as */*
+  Parameters: {"name"=>"sopa4", "tipo"=>"saca gomas", "ingredients"=>"agua,maggie", "steps"=>"echar maggie al agua y calentar", "images"=>"sopa.png"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Unpermitted parameter: :tipo
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/recipes_controller.rb:47
+  [1m[36mRecipe Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "recipes" WHERE "recipes"."name" = ? LIMIT ?[0m  [["name", "sopa4"], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:47
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/recipes_controller.rb:47
+Completed 422 Unprocessable Entity in 77ms (Views: 0.2ms | ActiveRecord: 7.6ms)
+
+
+Started POST "/new-recipe?name=sopa5&tipo=saca%20gomas&ingredients=agua,maggie&steps=echar%20maggie%20al%20agua%20y%20calentar&images=sopa.png" for ::1 at 2019-06-04 18:49:00 -0600
+Processing by RecipesController#create as */*
+  Parameters: {"name"=>"sopa5", "tipo"=>"saca gomas", "ingredients"=>"agua,maggie", "steps"=>"echar maggie al agua y calentar", "images"=>"sopa.png"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Unpermitted parameter: :tipo
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/recipes_controller.rb:47
+  [1m[36mRecipe Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "recipes" WHERE "recipes"."name" = ? LIMIT ?[0m  [["name", "sopa5"], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:47
+  [1m[36mRecipe Create (2.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "ingredients", "steps", "images", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "sopa5"], ["ingredients", "agua,maggie"], ["steps", "echar maggie al agua y calentar"], ["images", "sopa.png"], ["created_at", "2019-06-05 00:49:00.129451"], ["updated_at", "2019-06-05 00:49:00.129451"]]
+  ↳ app/controllers/recipes_controller.rb:47
+  [1m[35m (7.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/recipes_controller.rb:47
+Completed 200 OK in 1085ms (Views: 0.7ms | ActiveRecord: 10.4ms)
+
+
+Started POST "/new-recipe?name=sopa6&tipo=saca%20gomas&ingredients=agua,maggie&steps=echar%20maggie%20al%20agua%20y%20calentar&images=sopa.png" for ::1 at 2019-06-04 18:49:59 -0600
+Processing by RecipesController#create as */*
+  Parameters: {"name"=>"sopa6", "tipo"=>"saca gomas", "ingredients"=>"agua,maggie", "steps"=>"echar maggie al agua y calentar", "images"=>"sopa.png"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Unpermitted parameter: :tipo
+  [1m[35m (4.6ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/recipes_controller.rb:47
+  [1m[36mRecipe Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "recipes" WHERE "recipes"."name" = ? LIMIT ?[0m  [["name", "sopa6"], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:47
+  [1m[36mRecipe Create (3.5ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "ingredients", "steps", "images", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "sopa6"], ["ingredients", "agua,maggie"], ["steps", "echar maggie al agua y calentar"], ["images", "sopa.png"], ["created_at", "2019-06-05 00:49:59.257497"], ["updated_at", "2019-06-05 00:49:59.257497"]]
+  ↳ app/controllers/recipes_controller.rb:47
+  [1m[35m (6.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/recipes_controller.rb:47
+Completed 200 OK in 926ms (Views: 0.7ms | ActiveRecord: 17.0ms)
+
+
+Started POST "/new-recipe?name=sopa7&tipo=saca%20gomas&ingredients=agua,maggie&steps=echar%20maggie%20al%20agua%20y%20calentar&images=sopa.png" for ::1 at 2019-06-04 18:50:31 -0600
+Processing by RecipesController#create as */*
+  Parameters: {"name"=>"sopa7", "tipo"=>"saca gomas", "ingredients"=>"agua,maggie", "steps"=>"echar maggie al agua y calentar", "images"=>"sopa.png"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Unpermitted parameter: :tipo
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/recipes_controller.rb:47
+  [1m[36mRecipe Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "recipes" WHERE "recipes"."name" = ? LIMIT ?[0m  [["name", "sopa7"], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:47
+  [1m[36mRecipe Create (4.0ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "ingredients", "steps", "images", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "sopa7"], ["ingredients", "agua,maggie"], ["steps", "echar maggie al agua y calentar"], ["images", "sopa.png"], ["created_at", "2019-06-05 00:50:31.471254"], ["updated_at", "2019-06-05 00:50:31.471254"]]
+  ↳ app/controllers/recipes_controller.rb:47
+  [1m[35m (12.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/recipes_controller.rb:47
+Completed 200 OK in 893ms (Views: 0.7ms | ActiveRecord: 18.8ms)
+
+
+Started POST "/new-recipe?name=%27sopa8%27&tipo=%27saca%20gomas%27&ingredients=%27agua,maggie%27&steps=%27echar%20maggie%20al%20agua%20y%20calentar%27&images=%27sopa.png%27" for ::1 at 2019-06-04 18:52:16 -0600
+Processing by RecipesController#create as */*
+  Parameters: {"name"=>"'sopa8'", "tipo"=>"'saca gomas'", "ingredients"=>"'agua,maggie'", "steps"=>"'echar maggie al agua y calentar'", "images"=>"'sopa.png'"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Unpermitted parameter: :tipo
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/recipes_controller.rb:47
+  [1m[36mRecipe Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "recipes" WHERE "recipes"."name" = ? LIMIT ?[0m  [["name", "'sopa8'"], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:47
+  [1m[36mRecipe Create (4.1ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "ingredients", "steps", "images", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "'sopa8'"], ["ingredients", "'agua,maggie'"], ["steps", "'echar maggie al agua y calentar'"], ["images", "'sopa.png'"], ["created_at", "2019-06-05 00:52:16.075649"], ["updated_at", "2019-06-05 00:52:16.075649"]]
+  ↳ app/controllers/recipes_controller.rb:47
+  [1m[35m (13.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/recipes_controller.rb:47
+Completed 200 OK in 832ms (Views: 7.6ms | ActiveRecord: 18.4ms)
+
+
+Started POST "/auth/login?email=paulozuniga17@gmail.com&password=[FILTERED]" for ::1 at 2019-06-04 19:04:15 -0600
+Processing by AuthenticationController#login as */*
+  Parameters: {"email"=>"paulozuniga17@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "paulozuniga17@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6
+Completed 200 OK in 138ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/recipes" for ::1 at 2019-06-04 19:04:24 -0600
+Processing by RecipesController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Completed 200 OK in 945ms (Views: 0.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/recipes" for ::1 at 2019-06-04 19:04:43 -0600
+Processing by RecipesController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Completed 200 OK in 850ms (Views: 0.7ms | ActiveRecord: 0.1ms)
+
+
+  [1m[36mRecipe Destroy (15.8ms)[0m  [1m[31mDELETE FROM "recipes"[0m
+Started POST "/auth/login?email=paulozuniga17@gmail.com&password=[FILTERED]" for ::1 at 2019-06-05 16:23:13 -0600
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paulo/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by AuthenticationController#login as */*
+  Parameters: {"email"=>"paulozuniga17@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "paulozuniga17@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6
+Completed 200 OK in 178ms (Views: 0.9ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/recipes" for ::1 at 2019-06-05 16:24:00 -0600
+Processing by RecipesController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Completed 200 OK in 1051ms (Views: 0.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/new-recipe?name=%27sopa%27&tipo=%27saca%20gomas%27&ingredients=%27agua,maggie%27&steps=%27echar%20maggie%20al%20agua%20y%20calentar%27&images=%27sopa.png%27" for ::1 at 2019-06-05 16:25:24 -0600
+Processing by RecipesController#create as */*
+  Parameters: {"name"=>"'sopa'", "tipo"=>"'saca gomas'", "ingredients"=>"'agua,maggie'", "steps"=>"'echar maggie al agua y calentar'", "images"=>"'sopa.png'"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Unpermitted parameter: :tipo
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/recipes_controller.rb:47
+  [1m[36mRecipe Exists (5.0ms)[0m  [1m[34mSELECT  1 AS one FROM "recipes" WHERE "recipes"."name" = ? LIMIT ?[0m  [["name", "'sopa'"], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:47
+  [1m[36mRecipe Create (1.5ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "ingredients", "steps", "images", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "'sopa'"], ["ingredients", "'agua,maggie'"], ["steps", "'echar maggie al agua y calentar'"], ["images", "'sopa.png'"], ["created_at", "2019-06-05 22:25:25.039127"], ["updated_at", "2019-06-05 22:25:25.039127"]]
+  ↳ app/controllers/recipes_controller.rb:47
+  [1m[35m (6.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/recipes_controller.rb:47
+Completed 200 OK in 1044ms (Views: 0.6ms | ActiveRecord: 14.3ms)
+
+
+Started GET "/recipes/sopa" for ::1 at 2019-06-05 16:26:55 -0600
+Processing by RecipesController#show as */*
+  Parameters: {"name"=>"sopa"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Completed 500 Internal Server Error in 1082ms (ActiveRecord: 0.3ms)
+
+
+  
+JSON::ParserError (765: unexpected token at 'Traceback (most recent call last):
+  File "recipeByName.py", line 31, in <module>
+    main()
+  File "recipeByName.py", line 10, in main
+    result = list(prolog.query("buscarXnombre("+str(sys.argv[1])+",A,B,C,D,E)"))
+  File "/home/paulozuniga/pyswip_env/lib/python3.5/site-packages/pyswip/prolog.py", line 127, in __call__
+    "Returned: '", str(term), "'."]))
+pyswip.prolog.PrologError: Caused by: 'buscarXnombre(sopa,A,B,C,D,E)'. Returned: 'error(existence_error(procedure, /(buscarXnombre, 6)), context(/(pyrun, 2), _G962))'.
+'):
+  
+app/controllers/recipes_controller.rb:35:in `block in show'
+app/controllers/recipes_controller.rb:34:in `show'
+Started GET "/recipes/%27sopa%27" for ::1 at 2019-06-05 16:36:15 -0600
+Processing by RecipesController#show as */*
+  Parameters: {"name"=>"'sopa'"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Completed 500 Internal Server Error in 1063ms (ActiveRecord: 1.1ms)
+
+
+  
+JSON::ParserError (765: unexpected token at 'Traceback (most recent call last):
+  File "recipeByName.py", line 31, in <module>
+    main()
+  File "recipeByName.py", line 10, in main
+    result = list(prolog.query("buscarXnombre("+str(sys.argv[1])+",A,B,C,D,E)"))
+  File "/home/paulozuniga/pyswip_env/lib/python3.5/site-packages/pyswip/prolog.py", line 127, in __call__
+    "Returned: '", str(term), "'."]))
+pyswip.prolog.PrologError: Caused by: 'buscarXnombre(sopa,A,B,C,D,E)'. Returned: 'error(existence_error(procedure, /(buscarXnombre, 6)), context(/(pyrun, 2), _G962))'.
+'):
+  
+app/controllers/recipes_controller.rb:36:in `block in show'
+app/controllers/recipes_controller.rb:35:in `show'
+Started POST "/auth/login?email=paulozuniga17@gmail.com&password=[FILTERED]" for ::1 at 2019-06-05 16:38:35 -0600
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paulo/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by AuthenticationController#login as */*
+  Parameters: {"email"=>"paulozuniga17@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "paulozuniga17@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6
+Completed 200 OK in 86ms (Views: 0.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/recipe/?name=%27sopa%27" for ::1 at 2019-06-05 16:39:05 -0600
+Processing by RecipesController#show as */*
+  Parameters: {"name"=>"'sopa'"}
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Completed 500 Internal Server Error in 1031ms (ActiveRecord: 2.7ms)
+
+
+  
+JSON::ParserError (765: unexpected token at 'Traceback (most recent call last):
+  File "recipeByName.py", line 31, in <module>
+    main()
+  File "recipeByName.py", line 10, in main
+    result = list(prolog.query("buscarXnombre("+str(sys.argv[1])+",A,B,C,D,E)"))
+  File "/home/paulozuniga/pyswip_env/lib/python3.5/site-packages/pyswip/prolog.py", line 127, in __call__
+    "Returned: '", str(term), "'."]))
+pyswip.prolog.PrologError: Caused by: 'buscarXnombre(sopa,A,B,C,D,E)'. Returned: 'error(existence_error(procedure, /(buscarXnombre, 6)), context(/(pyrun, 2), _G962))'.
+'):
+  
+app/controllers/recipes_controller.rb:36:in `block in show'
+app/controllers/recipes_controller.rb:35:in `show'
+Started GET "/recipe/?name=%27sopa%27" for ::1 at 2019-06-05 16:45:12 -0600
+Processing by RecipesController#show as */*
+  Parameters: {"name"=>"'sopa'"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Completed 500 Internal Server Error in 1063ms (ActiveRecord: 0.2ms)
+
+
+  
+JSON::ParserError (765: unexpected token at 'Traceback (most recent call last):
+  File "recipeByName.py", line 31, in <module>
+    main()
+  File "recipeByName.py", line 10, in main
+    result = list(prolog.query("buscarXnombre("+str(sys.argv[1])+",A,B,C,D,E)"))
+  File "/home/paulozuniga/pyswip_env/lib/python3.5/site-packages/pyswip/prolog.py", line 127, in __call__
+    "Returned: '", str(term), "'."]))
+pyswip.prolog.PrologError: Caused by: 'buscarXnombre(sopa,A,B,C,D,E)'. Returned: 'error(existence_error(procedure, /(buscarXnombre, 6)), context(/(pyrun, 2), _G962))'.
+'):
+  
+app/controllers/recipes_controller.rb:36:in `block in show'
+app/controllers/recipes_controller.rb:35:in `show'
+Started GET "/recipe/?name=%27arepas%27" for ::1 at 2019-06-05 16:50:14 -0600
+Processing by RecipesController#show as */*
+  Parameters: {"name"=>"'arepas'"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Completed 500 Internal Server Error in 1041ms (ActiveRecord: 0.1ms)
+
+
+  
+JSON::ParserError (765: unexpected token at 'Traceback (most recent call last):
+  File "recipeByName.py", line 31, in <module>
+    main()
+  File "recipeByName.py", line 10, in main
+    result = list(prolog.query("buscarXnombre("+str(sys.argv[1])+",A,B,C,D,E)"))
+  File "/home/paulozuniga/pyswip_env/lib/python3.5/site-packages/pyswip/prolog.py", line 127, in __call__
+    "Returned: '", str(term), "'."]))
+pyswip.prolog.PrologError: Caused by: 'buscarXnombre(arepas,A,B,C,D,E)'. Returned: 'error(existence_error(procedure, /(buscarXnombre, 6)), context(/(pyrun, 2), _G968))'.
+'):
+  
+app/controllers/recipes_controller.rb:36:in `block in show'
+app/controllers/recipes_controller.rb:35:in `show'
+Started GET "/recipe/?name=%27arepas%27" for ::1 at 2019-06-05 16:51:24 -0600
+Processing by RecipesController#show as */*
+  Parameters: {"name"=>"'arepas'"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Completed 200 OK in 1056ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/recipe-by-name/?name=%27arepas%27" for ::1 at 2019-06-05 17:01:24 -0600
+Processing by ApplicationController#not_found as */*
+  Parameters: {"name"=>"'arepas'", "a"=>"recipe-by-name"}
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/auth/login?email=paulozuniga17@gmail.com&password=[FILTERED]" for ::1 at 2019-06-05 17:02:04 -0600
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paulo/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by AuthenticationController#login as */*
+  Parameters: {"email"=>"paulozuniga17@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "paulozuniga17@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6
+Completed 200 OK in 83ms (Views: 0.2ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/new-recipe?name=%27sopa%27&tipo=%27saca%20gomas%27&ingredients=%27agua,maggie%27&steps=%27echar%20maggie%20al%20agua%20y%20calentar%27&images=%27sopa.png%27" for ::1 at 2019-06-05 17:02:21 -0600
+Processing by RecipesController#create as */*
+  Parameters: {"name"=>"'sopa'", "tipo"=>"'saca gomas'", "ingredients"=>"'agua,maggie'", "steps"=>"'echar maggie al agua y calentar'", "images"=>"'sopa.png'"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Unpermitted parameter: :tipo
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/recipes_controller.rb:48
+  [1m[36mRecipe Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "recipes" WHERE "recipes"."name" = ? LIMIT ?[0m  [["name", "'sopa'"], ["LIMIT", 1]]
+  ↳ app/controllers/recipes_controller.rb:48
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/recipes_controller.rb:48
+Completed 422 Unprocessable Entity in 49ms (Views: 0.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/recipe-by-name/?name=%27arepas%27" for ::1 at 2019-06-05 17:02:38 -0600
+Processing by ApplicationController#not_found as */*
+  Parameters: {"name"=>"'arepas'", "a"=>"recipe-by-name"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/auth/login?email=paulozuniga17@gmail.com&password=[FILTERED]" for ::1 at 2019-06-05 17:03:21 -0600
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paulo/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by AuthenticationController#login as */*
+  Parameters: {"email"=>"paulozuniga17@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "paulozuniga17@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6
+Completed 200 OK in 83ms (Views: 0.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/recipe-by-name/?name=%27arepas%27" for ::1 at 2019-06-05 17:03:34 -0600
+Processing by RecipesController#show as */*
+  Parameters: {"name"=>"'arepas'"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Completed 200 OK in 1022ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/recipe-by-type/?tipo=%27almuerzo%27" for ::1 at 2019-06-05 17:04:26 -0600
+Processing by RecipesController#showType as */*
+  Parameters: {"tipo"=>"'almuerzo'"}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipe-by-type/?tipo=%27almuerzo%27" for ::1 at 2019-06-05 17:11:19 -0600
+Processing by RecipesController#showType as */*
+  Parameters: {"tipo"=>"'almuerzo'"}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/recipe-by-type/?tipo=%27almuerzo%27" for ::1 at 2019-06-05 17:13:49 -0600
+Processing by RecipesController#showType as */*
+  Parameters: {"tipo"=>"'almuerzo'"}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/auth/login?email=paulozuniga17@gmail.com&password=[FILTERED]" for ::1 at 2019-06-05 17:14:45 -0600
+Processing by AuthenticationController#login as */*
+  Parameters: {"email"=>"paulozuniga17@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "paulozuniga17@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6
+Completed 200 OK in 173ms (Views: 0.3ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/recipe-by-type/?tipo=%27almuerzo%27" for ::1 at 2019-06-05 17:15:02 -0600
+Processing by RecipesController#showType as */*
+  Parameters: {"tipo"=>"'almuerzo'"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Completed 200 OK in 1023ms (Views: 0.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/auth/login?email=paulozuniga17@gmail.com&password=[FILTERED]" for ::1 at 2019-06-05 17:19:48 -0600
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paulo/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by AuthenticationController#login as */*
+  Parameters: {"email"=>"paulozuniga17@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "paulozuniga17@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6
+Completed 200 OK in 102ms (Views: 0.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/recipe-by-type/?ingredients=%27huevo%27" for ::1 at 2019-06-05 17:19:57 -0600
+Processing by RecipesController#showType as */*
+  Parameters: {"ingredients"=>"'huevo'"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Completed 500 Internal Server Error in 1049ms (ActiveRecord: 0.3ms)
+
+
+  
+JSON::ParserError (765: unexpected token at 'Traceback (most recent call last):
+  File "recipeByType.py", line 31, in <module>
+    main()
+  File "recipeByType.py", line 10, in main
+    result = list(prolog.query("buscarXtipo("+str(sys.argv[1])+",A,B,C,D,E)"))
+IndexError: list index out of range
+'):
+  
+app/controllers/recipes_controller.rb:52:in `block in showType'
+app/controllers/recipes_controller.rb:51:in `showType'
+Started GET "/recipe-by-ingredients/?ingredients=%27huevo%27" for ::1 at 2019-06-05 17:25:10 -0600
+Processing by RecipesController#showIngredients as */*
+  Parameters: {"ingredients"=>"'huevo'"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Completed 200 OK in 1021ms (Views: 0.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/recipe-by-ingredients/?ingredients=%27huevos%27" for ::1 at 2019-06-05 17:25:26 -0600
+Processing by RecipesController#showIngredients as */*
+  Parameters: {"ingredients"=>"'huevos'"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Completed 200 OK in 1014ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/recipe-by-ingredients/?ingredients=%27huevo%27" for ::1 at 2019-06-05 17:25:33 -0600
+Processing by RecipesController#showIngredients as */*
+  Parameters: {"ingredients"=>"'huevo'"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Completed 200 OK in 1153ms (Views: 0.6ms | ActiveRecord: 0.1ms)
+
+

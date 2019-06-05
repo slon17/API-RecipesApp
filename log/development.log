@@ -1950,3 +1950,145 @@ Processing by RecipesController#index as */*
 Completed 200 OK in 1121ms (Views: 9.3ms | ActiveRecord: 8.6ms)
 
 
+Started POST "/auth/login?email=paulozuniga17@gmail.com&password=[FILTERED]" for ::1 at 2019-06-04 17:32:44 -0600
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paulo/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by AuthenticationController#login as */*
+  Parameters: {"email"=>"paulozuniga17@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (4.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "paulozuniga17@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6
+Completed 200 OK in 173ms (Views: 0.3ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/recipes" for ::1 at 2019-06-04 17:33:00 -0600
+  
+SyntaxError (/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:55: syntax error, unexpected ')', expecting keyword_end
+..._env/bin/activate;"+@cmd.to_s))
+...                              ^
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:102: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/recipes_controller.rb:55: syntax error, unexpected ')', expecting keyword_end
+app/controllers/recipes_controller.rb:102: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/recipes" for ::1 at 2019-06-04 17:34:44 -0600
+  
+SyntaxError (/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:55: syntax error, unexpected ')', expecting keyword_end
+..._env/bin/activate;"+@cmd.to_s))
+...                              ^
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:102: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/recipes_controller.rb:55: syntax error, unexpected ')', expecting keyword_end
+app/controllers/recipes_controller.rb:102: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/recipes" for ::1 at 2019-06-04 17:34:54 -0600
+  
+SyntaxError (/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:55: syntax error, unexpected ')', expecting keyword_end
+..._env/bin/activate;"+@cmd.to_s))
+...                              ^
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:102: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/recipes_controller.rb:55: syntax error, unexpected ')', expecting keyword_end
+app/controllers/recipes_controller.rb:102: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/recipes" for ::1 at 2019-06-04 17:37:17 -0600
+Processing by RecipesController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Completed 200 OK in 1375ms (Views: 0.8ms | ActiveRecord: 5.0ms)
+
+
+Started POST "/newRecipe?Authorization=eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE1NTk3Nzc1NjV9.VJenQbMGuqZyrVT9SDNraZZbPW8hTHhxp0Tm0Ih-Um8" for ::1 at 2019-06-04 17:51:07 -0600
+  
+SyntaxError (/home/paulo/Desktop/API-recipeApp/API-recipeApp/config/routes.rb:8: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  post '/new-recipe' to: 'recipes#create'
+                     ^~):
+  
+config/routes.rb:8: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+Started POST "/auth/login?email=paulozuniga17@gmail.com&password=[FILTERED]" for ::1 at 2019-06-04 17:55:40 -0600
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paulo/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by AuthenticationController#login as */*
+  Parameters: {"email"=>"paulozuniga17@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "paulozuniga17@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6
+Completed 200 OK in 87ms (Views: 0.2ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/newRecipe" for ::1 at 2019-06-04 17:56:15 -0600
+  
+ActionController::RoutingError (No route matches [POST] "/newRecipe"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/new-recipe" for ::1 at 2019-06-04 17:56:48 -0600
+Processing by RecipesController#create as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.2ms)
+
+
+  
+NoMethodError (undefined method `errors' for nil:NilClass):
+  
+app/controllers/recipes_controller.rb:60:in `create'
+Started POST "/new-recipe" for ::1 at 2019-06-04 17:58:07 -0600
+Processing by RecipesController#create as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Completed 422 Unprocessable Entity in 30ms (Views: 3.3ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/new-recipe?name=sopa&type=saca%20gomas&ingredients=agua,maggie&steps=echar%20maggie%20al%20agua%20y%20calentar&images=sopa.png" for ::1 at 2019-06-04 18:03:49 -0600
+  
+SyntaxError (/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:55: syntax error, unexpected ')', expecting keyword_end
+..._env/bin/activate;"+@cmd.to_s))
+...                              ^
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:102: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/recipes_controller.rb:55: syntax error, unexpected ')', expecting keyword_end
+app/controllers/recipes_controller.rb:102: syntax error, unexpected keyword_end, expecting end-of-input
+Started POST "/new-recipe?name=sopa&type=saca%20gomas&ingredients=agua,maggie&steps=echar%20maggie%20al%20agua%20y%20calentar&images=sopa.png" for ::1 at 2019-06-04 18:04:49 -0600
+  
+SyntaxError (/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:55: syntax error, unexpected ')', expecting keyword_end
+..._env/bin/activate;"+@cmd.to_s))
+...                              ^
+/home/paulo/Desktop/API-recipeApp/API-recipeApp/app/controllers/recipes_controller.rb:102: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/recipes_controller.rb:55: syntax error, unexpected ')', expecting keyword_end
+app/controllers/recipes_controller.rb:102: syntax error, unexpected keyword_end, expecting end-of-input
+Started POST "/new-recipe?name=sopa&type=saca%20gomas&ingredients=agua,maggie&steps=echar%20maggie%20al%20agua%20y%20calentar&images=sopa.png" for ::1 at 2019-06-04 18:05:14 -0600
+Processing by RecipesController#create as */*
+  Parameters: {"name"=>"sopa", "type"=>"saca gomas", "ingredients"=>"agua,maggie", "steps"=>"echar maggie al agua y calentar", "images"=>"sopa.png"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 1.3ms)
+
+
+  
+ActiveRecord::SubclassNotFound (The single-table inheritance mechanism failed to locate the subclass: 'saca gomas'. This error is raised because the column 'type' is reserved for storing the class in case of inheritance. Please rename this column if you didn't intend it to be used for storing the inheritance class or overwrite Recipe.inheritance_column to use another column for that information.):
+  
+app/controllers/recipes_controller.rb:46:in `create'
+Started POST "/new-recipe?name=sopa&type=saca%20gomas&ingredients=agua,maggie&steps=echar%20maggie%20al%20agua%20y%20calentar&images=sopa.png" for ::1 at 2019-06-04 18:09:45 -0600
+Processing by RecipesController#create as */*
+  Parameters: {"name"=>"sopa", "type"=>"saca gomas", "ingredients"=>"agua,maggie", "steps"=>"echar maggie al agua y calentar", "images"=>"sopa.png"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Completed 200 OK in 906ms (Views: 0.2ms | ActiveRecord: 4.2ms)
+
+

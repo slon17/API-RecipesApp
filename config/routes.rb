@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   #resource :recipes
   post '/auth/login', to: 'authentication#login'
   get '/recipes', to: 'recipes#index'
+  post '/new-recipe', to: 'recipes#create'
   get '/*a', to: 'application#not_found'
 
 end

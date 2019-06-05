@@ -6,7 +6,6 @@ class RecipesController < ApplicationController
 
   # GET /recipes
   def index
-    @recipes = []
     #extraer de prolog junto al parse
     @hostname = "52.226.107.107"
     @username = "paulozuniga"
@@ -27,16 +26,36 @@ class RecipesController < ApplicationController
   # GET /recipes/{recipe_name}
   def show
     #buscar receta mediante prolog
-    render json: @recipe, status: :ok
+    @hostname = "52.226.107.107"
+    @username = "paulozuniga"
+    @password = "Murcielago17"
+    @cmd = "python3 recipeByName.py"
+
+    Net::SSH.start(@hostname.to_s, @username.to_s, :password => @password.to_s) do |ssh|
+      @recipes = JSON(ssh.exec!("source pyswip_env/bin/activate;"+@cmd.to_s))
+      @recipes = JSON.parse(@recipes.to_s)
+  		ssh.close
+    end
+
+    render json: {recipes: @recipes}, status: :ok
   end
 
-  # POST /recipes
+  # POST /new-recipe
   def create
     #parse ingredients and steps
     @recipe = Recipe.new(recipe_params)
     if @recipe.save
       #enviarlo a base de conocimientos
-      render json: @recipe, status: :created
+      @hostname = "52.226.107.107"
+      @username = "paulozuniga"
+      @password = "Murcielago17"
+      @cmd = "python3 newRecipe.py"+params[:name]+" "+params[:type]+" "+params[:ingredients]+params[:steps]+params[:images]
+
+      Net::SSH.start(@hostname.to_s, @username.to_s, :password => @password.to_s) do |ssh|
+        response = ssh.exec!("source pyswip_env/bin/activate;"+@cmd.to_s)
+    		ssh.close
+      end
+      render json: {recipe: @recipe}, status: :ok
     else
       render json: { errors: @recipe.errors.full_messages },
              status: :unprocessable_entity
@@ -77,7 +96,7 @@ class RecipesController < ApplicationController
 
   def recipe_params
     params.permit(
-      :name, :ingredients, :steps, :type
+      :name, :ingredients, :steps, :type, :images
     )
   end
 end

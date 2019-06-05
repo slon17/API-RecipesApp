@@ -8,10 +8,10 @@ receta('arepas','desayuno',['leche','polvito de arepa','azucar','huevo'],'haga u
 %Busquedas
 
 %por nombre
-buscarXnombre(Busqueda, _,T,Ing,P,Img) :- receta(Busqueda, T,Ing,P, Img).
+buscarXnombre(Busqueda, N,T,Ing,P,Img) :- receta(Busqueda, T,Ing,P, Img), N = Busqueda.
 
 %por tipo
-buscarXtipo(Busqueda, N,_,Ing,P,Img)  :- receta(N, Busqueda, Ing,P, Img).
+buscarXtipo(Busqueda, N,T,Ing,P,Img)  :- receta(N, Busqueda, Ing,P, Img), T = Busqueda.
 
 %por ingredientes.
 buscarXingredientes(Busqueda, N,T,Ing,P,Img) :- receta(N,T,Ing,P,Img), bIngrediente(Busqueda,Ing).

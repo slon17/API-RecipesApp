@@ -2790,3 +2790,104 @@ Processing by RecipesController#showIngredients as */*
 Completed 200 OK in 1153ms (Views: 0.6ms | ActiveRecord: 0.1ms)
 
 
+  [1m[35m (1508.9ms)[0m  [1m[35mCREATE DATABASE "db/newDatabase" ENCODING = 'utf8'[0m
+  ↳ /home/paulo/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (802.3ms)[0m  [1m[35mCREATE DATABASE "db/newTest" ENCODING = 'utf8'[0m
+  ↳ /home/paulo/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (43.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ /home/paulo/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (17.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ /home/paulo/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6215408685807949110)[0m
+  ↳ /home/paulo/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paulo/.rvm/gems/ruby-2.5.1/bin/rake:23
+Migrating to CreateUsers (20190527004757)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/paulo/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (18.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying, "password_digest" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190527004757_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190527004757"]]
+  ↳ /home/paulo/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (7.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/paulo/.rvm/gems/ruby-2.5.1/bin/rake:23
+Migrating to CreateRecipes (20190605002829)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/paulo/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (11.1ms)[0m  [1m[35mCREATE TABLE "recipes" ("id" bigserial primary key, "name" character varying, "tipo" character varying, "ingredients" character varying, "steps" character varying, "images" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190605002829_create_recipes.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190605002829"]]
+  ↳ /home/paulo/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/paulo/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/paulo/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/paulo/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Create (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-06-06 01:00:58.670599"], ["updated_at", "2019-06-06 01:00:58.670599"]]
+  ↳ /home/paulo/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/paulo/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(6215408685807949110)[0m
+  ↳ /home/paulo/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paulo/.rvm/gems/ruby-2.5.1/bin/rake:23
+Started POST "/auth/login?email=paulozuniga17@gmail.com&password=[FILTERED]" for ::1 at 2019-06-05 19:03:46 -0600
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paulo/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by AuthenticationController#login as */*
+  Parameters: {"email"=>"paulozuniga17@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "paulozuniga17@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6
+Completed 401 Unauthorized in 19ms (Views: 0.2ms | ActiveRecord: 7.0ms)
+
+
+Started POST "/users?email=paulozuniga17@gmail.com&password=[FILTERED]" for ::1 at 2019-06-05 19:03:58 -0600
+Processing by UsersController#create as */*
+  Parameters: {"email"=>"paulozuniga17@gmail.com", "password"=>"[FILTERED]"}
+  [1m[35m (3.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:19
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "paulozuniga17@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "paulozuniga17@gmail.com"], ["password_digest", "$2a$10$GzJ3KAXxeRcVZ1eO7FFK5esvdFVNSMy9h8OSBHZ.R9E/l1bAUKXVW"], ["created_at", "2019-06-06 01:03:58.232866"], ["updated_at", "2019-06-06 01:03:58.232866"]]
+  ↳ app/controllers/users_controller.rb:19
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:19
+Completed 201 Created in 177ms (Views: 0.6ms | ActiveRecord: 11.2ms)
+
+
+Started POST "/auth/login?email=paulozuniga17@gmail.com&password=[FILTERED]" for ::1 at 2019-06-05 19:04:07 -0600
+Processing by AuthenticationController#login as */*
+  Parameters: {"email"=>"paulozuniga17@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "paulozuniga17@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6
+Completed 200 OK in 139ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/recipes" for ::1 at 2019-06-05 19:04:23 -0600
+Processing by RecipesController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:12
+Completed 200 OK in 1335ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/auth/login?email=paulozuniga17@gmail.com&password=[FILTERED]" for ::1 at 2019-06-05 19:27:38 -0600
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paulo/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by AuthenticationController#login as */*
+  Parameters: {"email"=>"paulozuniga17@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "paulozuniga17@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6
+Completed 200 OK in 114ms (Views: 0.3ms | ActiveRecord: 6.4ms)
+
+
+Started POST "/auth/login?email=paulozuniga17@gmail.com&password=[FILTERED]" for ::1 at 2019-06-05 20:00:07 -0600
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paulo/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by AuthenticationController#login as */*
+  Parameters: {"email"=>"paulozuniga17@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "paulozuniga17@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6
+Completed 200 OK in 90ms (Views: 0.3ms | ActiveRecord: 7.1ms)
+
+

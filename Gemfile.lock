@@ -78,6 +78,7 @@ GEM
     nio4r (2.3.1)
     nokogiri (1.10.3)
       mini_portile2 (~> 2.4.0)
+    pg (1.1.4)
     puma (3.12.1)
     rack (2.0.7)
     rack-test (1.1.0)
@@ -123,7 +124,6 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
-    sqlite3 (1.4.1)
     swipl (0.5.0)
       ffi (~> 1.9)
     thor (0.20.3)
@@ -144,11 +144,11 @@ DEPENDENCIES
   jwt
   listen (>= 3.0.5, < 3.2)
   net-ssh
+  pg
   puma (~> 3.11)
   rails (~> 5.2.3)
   spring
   spring-watcher-listen (~> 2.0.0)
-  sqlite3
   swipl (~> 0.5.0)
   tzinfo-data
 
